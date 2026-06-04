@@ -8,13 +8,12 @@ version = "0.1.0"
 description = "A standard-library-only alarm clock for the command line, with a background daemon."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = "MIT"
 authors = [{ name = "Bhat Owais" }]
 keywords = ["alarm", "clock", "cli", "daemon", "scheduler"]
 classifiers = [
     "Environment :: Console",
     "Intended Audience :: End Users/Desktop",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: POSIX :: Linux",
     "Programming Language :: Python :: 3",
     "Topic :: Utilities",

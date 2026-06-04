@@ -1,3 +1,12 @@
+# Virtual environments / caches
 .venv
+venv/
 .pytest_cache
 __pycache__
+*.py[cod]
+
+# Python build artifacts
+build/
+dist/
+*.egg-info/
+*.egg

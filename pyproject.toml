@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clarm"
+version = "0.1.0"
+description = "A standard-library-only alarm clock for the command line, with a background daemon."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Bhat Owais" }]
+keywords = ["alarm", "clock", "cli", "daemon", "scheduler"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+# No runtime dependencies: standard library only.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+clarm = "clarm.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/ovaixe/clarm"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
